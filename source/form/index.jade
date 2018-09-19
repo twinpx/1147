@@ -1,0 +1,67 @@
+﻿extends ../layouts/main.jade
+
+block title
+  title Форма заявки | Est-a-tet
+
+block content
+
+  section.b-middle.b-form
+      
+    .container
+      
+      .row
+      
+        .col.m8.offset-m2
+      
+          h1 Форма заявки
+          
+          .b-flat-card
+            .b-flat-card__img
+              img(src='http://176.99.9.106/sites/default/files/shater1571463_636166.jpg', alt='')
+            .b-flat-card__text.left-align
+              b Количество комнат: 
+              | 1
+              br
+              b Секция: 
+              | 10
+              br
+              b Этаж: 
+              | 14
+              br
+              b Площадь: 
+              | 44.30
+              .b-flat-card__price 11 429 400
+              
+          hr.i-size-L
+          
+          form( action="" method="" )
+            .input-field
+              input#first_name.validate( name="first_name" type='text' required )
+              label(for='first_name') Имя
+              
+            .input-field
+              input#phone.validate( name="phone" type='tel' required )
+              label(for='phone') Номер телефона
+              
+            .input-field
+              input#email.validate( name="email" type='email' )
+              label(for='email') Email
+              
+            .input-field
+              textarea#message.materialize-textarea 
+              label( for="message" ) Сообщение
+              
+            .input-field
+              label
+                input( type="checkbox" checked="checked" name="agreement" )
+                span Я согласен на обработку персональных данных.
+                
+            hr.i-size-L
+                
+            .left-align <a href="">Соглашение на обработку персональных данных</a>.
+            
+            hr
+            
+            button.btn( type="submit" ) Отправить заявку
+                
+                

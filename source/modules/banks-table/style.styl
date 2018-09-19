@@ -1,0 +1,91 @@
+﻿@import '../../styl/component-include.styl'
+
+.b-tabs
+
+  &__menu
+    text-align center
+    margin-bottom 44px
+    
+    &__item
+      color #fff
+      text-transform uppercase
+      padding 0 20px
+      border-radius 17px
+      background-color #473728
+      font-size 8pt
+      line-height 33px
+      height 33px
+      cursor pointer
+      display inline-block
+      min-width 110px
+      margin 0 1px
+      
+      &.i-active
+        color #9a9a9a
+        background-color #f6f6f6
+        box-shadow 0 1px 0 rgba( 51,51,51,.07 ) inset
+        cursor default
+        
+      &:focus
+        ouline none
+        
+  &__item
+    display none
+    
+    &.i-active
+      display block
+
+.b-banks-table
+    
+  th
+    font-size 7pt
+    text-transform uppercase
+    font-weight bold
+    text-align center
+    padding-bottom 19px
+    width 18%
+    
+    &:first-child
+      font-size 10.5pt
+      text-transform none
+      text-align left
+      width 28%
+      
+    @media( max-width 600px)
+      font-size 5pt
+      display inline-block
+      width 24%
+      
+      &:first-child
+        display none
+  
+  tbody
+    
+    tr
+      height 65px
+      border-bottom-color #c7c7bb
+      
+      @media( max-width 600px)
+        display block
+        padding 20px 0
+        height auto
+      
+    td
+      vertical-align middle
+      text-align center
+      
+      @media( max-width 600px)
+        display inline-block
+        width 24%
+      
+      &:first-child
+        text-align left
+        
+        @media( max-width 600px)
+          display block
+          width 100%
+          text-align center
+          margin-bottom 15px
+          
+          img
+            width 200px

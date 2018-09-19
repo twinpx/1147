@@ -1,0 +1,278 @@
+body
+  background #fff
+  
+a
+  
+  &,
+  &:hover,
+  &:focus
+    color #333333
+    
+  &:hover
+    text-decoration underline
+    opacity .7
+  
+section
+  min-height 100vh
+  position relative
+  padding 30px 0
+  box-sizing border-box
+  
+  &#top-gallery,
+  &#contacts
+    padding 0
+  
+h1,
+.b-h1
+  font-size 26pt
+  margin-bottom 48px
+  
+  &:first-child
+    margin-top 0
+    
+h2,
+.b-h2
+  text-transform uppercase
+  font-size 13pt
+  font-weight bold
+  margin-bottom 50px
+  
+  &:after
+    content ''
+    display block
+    background-color #9b9478
+    margin 0 auto
+    height 4px
+    width 64px
+    margin-top 14px
+  
+  &:first-child
+    margin-top 0
+  
+.b-middle
+  display flex
+  align-items center
+  justify-content center
+  
+  &-wrapper
+    width 100%
+  
+.i-gray
+  background-color #f6f6f6
+  
+.i-dark-gray
+  background-color #343232
+  color #fff
+  
+.b-parking
+  max-height 595px
+  color #fff
+  font-weight bold
+  background-repeat no-repeat
+  background-position center
+  background-size cover
+  padding 60px 0 90px
+  
+  &-h3
+    margin 0 0 120px
+    
+    @media( max-width 600px)
+      margin-bottom 90px
+    
+  img
+    margin-bottom 70px
+    
+    @media( max-width 600px)
+      max-width 100%
+      height 100px
+      margin-bottom 20px
+    
+  .row p
+    line-height 1.1
+    
+    span
+      font-size 35pt
+  
+hr
+  border 0
+  margin 0
+  padding 10px 0
+  
+  &.i-size-L
+    padding 25px 0
+    
+.btn,
+.btn-large,
+.btn-small
+  font-size 7pt
+  text-transform uppercase
+  color #fff
+  background-color #473728
+  box-shadow none
+  border-radius 0
+  
+  &:hover,
+  &:focus,
+  a&:hover,
+  a&:focus
+    background-color #473728
+    opacity .7
+    transition( opacity .2s ease-out )
+    box-shadow none
+    color #fff
+    text-decoration none
+  
+.btn-large
+  line-height 50px
+  height 50px
+  padding 0 24px
+  
+#map
+  width 100%
+  height 100vh
+  
+  @media( max-width 600px)
+    height 300px
+  
+.b-contacts
+  width 100%
+  height 476px
+  max-width 350px
+  background-color rgba( 50,50,50,.86)
+  color #fff
+  padding 23px
+  position absolute
+  top 50%
+  left 127px
+  margin-top -238px
+  z-index 1
+  
+  a,
+  a:hover,
+  a:focus
+    color #fff
+  
+  @media( max-width 600px)
+    position static
+    height auto
+    max-width 100%
+    background-color transparent
+    top auto
+    left auto
+    margin-top 50px
+  
+.b-gallery-note
+  font-size 7pt
+  margin-top 15px
+  
+.row
+  margin-bottom 0
+  
+.b-gallery
+  
+  .fotorama__stage
+    background-color #000
+    
+  .fotorama__arr
+    background none
+  
+    &:after
+      content ''
+      display block
+      border-top 1px solid #fff
+      border-right 1px solid #fff
+      width 30px
+      height 30px
+      position absolute
+      top 0
+      transition( opacity .5s ease )
+    
+  .fotorama__arr.fotorama__arr--prev
+    margin-left: 15px
+
+    &:after
+      transform( rotate(-135deg))
+      left 19px
+    
+  .fotorama__arr.fotorama__arr--next
+    margin-right 15px
+
+    &:after
+        transform( rotate(45deg))
+        right 19px
+        
+.b-flat-card
+  display flex
+  background-color #f3f3f3
+  
+  @media( max-width 600px )
+    display block
+  
+  &__img
+    width 45%
+    background-color #fff
+    display flex
+    align-items center
+    
+    img
+      max-width 100%
+      
+    @media( max-width 600px )
+      width auto
+    
+  &__text
+    width 55%
+    font-size 13.5pt
+    padding 35px 55px
+    line-height 1.75
+  
+    @media( min-width 601px) and ( max-width 992px )
+      padding 40px 30px
+  
+    @media( min-width 993px) and ( max-width 1600px )
+      padding-left 50px
+      padding-right 50px
+      
+    @media( max-width 600px )
+      width auto
+    
+  &__price
+    font-size 26pt
+    margin-top 35px
+
+.b-form
+  padding-top 150px
+  padding-bottom 100px
+  
+#slide-out.sidenav
+  padding-top 30px
+  
+#process
+  
+  .fotorama__arr
+    background none
+  
+    &:after
+      content ''
+      display block
+      border-top 1px solid #fff
+      border-right 1px solid #fff
+      width 30px
+      height 30px
+      position absolute
+      top -10px
+      transition( opacity .5s ease )
+    
+  .fotorama__arr.fotorama__arr--prev
+    margin-left: 15px
+
+    &:after
+      transform( rotate(-135deg))
+      left 19px
+    
+  .fotorama__arr.fotorama__arr--next
+    margin-right 15px
+
+    &:after
+        transform( rotate(45deg))
+        right 19px

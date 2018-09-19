@@ -1,0 +1,65 @@
+﻿doctype html
+html
+  head
+    title PDF | Est-a-tet
+      
+    include ../layouts/includes/meta.jade
+    include ../layouts/includes/styles.jade
+    include ../layouts/includes/scripts.jade
+    
+  body
+    
+    .b-page
+
+      link( rel="stylesheet", href="/pdf/style.css" )
+      
+
+      #pdf
+      
+        #pdf-left
+          img( src="/pdf/images/logo.gif" width="128" height="87" alt="" )
+          div( style="height: 17px;" )
+          #pdf-phone +7 (495) <span>151-08-57</span>
+          div( style="height: 90px;" )
+          img( src="/pdf/images/plan.gif" width="100" height="106" alt="" )
+          div( style="height: 125px;" )
+          img( src="/pdf/images/compas.gif" width="176" height="182" alt="" )
+          
+        #pdf-center
+          img( src="/pdf/images/flat.gif" width="420" alt="" )
+          
+        #pdf-right
+        
+          b( style="font-size: 30pt;" ) 10
+          br
+          span секция
+          
+          div( style="height: 55px;" )
+        
+          b( style="font-size: 30pt;" ) 8
+          br
+          span этаж
+          
+          div( style="height: 55px;" )
+        
+          b( style="font-size: 30pt;" ) 1
+          br
+          span комната
+          
+          div( style="height: 55px;" )
+        
+          b( style="font-size: 30pt;" ) 44,3м <sup>2</sup>
+          br
+          span площадь
+          
+          div( style="height: 55px;" )
+        
+          b( style="font-size: 30pt;" ) 99 429 400
+          br
+          span цена в рублях
+          
+          div( style="height: 110px;" )
+          
+          #copy © 2014 ООО "Шатер Девелопмент"
+            br
+            | ДАТА: 19.09.2018

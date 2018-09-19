@@ -1,0 +1,125 @@
+@import '../../styl/component-include.styl'
+
+@keyframes impression-preloader
+  0%
+    transform rotate(0deg)
+  50%
+    transform rotate(180deg)
+  100%
+    transform rotate(360deg)
+    
+.b-fotorama
+
+  &__frame
+    position relative
+    height 100%
+    
+    &:before
+      content ''
+      display block
+      background url(/template/images/preloader.svg) no-repeat center
+      width 50px
+      height 50px
+      position absolute
+      top 50%
+      left 50%
+      margin -25px 0 0 -25px
+      animation impression-preloader 1s linear infinite
+      
+    
+  &__container
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    color #fff
+    display flex
+    align-items center
+    
+    
+    &.i-show
+    
+      .b-fotorama__image,
+      .container
+        opacity 1
+    
+    @media (max-width: 1024px)
+      text-align center
+      
+      p
+        margin-right auto
+        margin-left auto
+    
+    p
+      max-width 540px
+      
+      b
+        display block
+        margin-bottom 30px
+      
+    p, .b-h1
+      @media (min-width: 1025px) and (max-width: 1525px)
+        margin-left 70px
+      
+    .container
+      opacity 0
+      transition( opacity 0.5s ease )
+      pointer-events none
+      z-index 2
+      
+    .btn
+      opacity 0
+      transition( opacity 0.5s ease )
+      
+    &:hover .btn
+      opacity 1
+      
+  &__image
+    display block
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background-repeat no-repeat
+    background-position center
+    background-size cover
+    opacity 0
+    transition( opacity 0.5s ease )
+    z-index 1
+          
+  &__cover
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background-color rgba( 0,0,0,.4 )
+    z-index 2
+    
+  &__note
+    color #fff
+    font-size 7pt
+    text-align center
+    position relative
+    
+    p
+      margin 0
+      position absolute
+      bottom 30px
+      left 0
+      width 100%
+      z-index 3
+      
+  .fotorama__nav-wrap
+    position relative
+    
+  .fotorama__nav
+    position absolute
+    bottom 70px
+    left 0
+    width 100%
+    
+  .fotorama__nav--dots .fotorama__nav__frame
+    height 0px

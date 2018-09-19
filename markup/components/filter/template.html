@@ -1,0 +1,69 @@
+
+<!-- start /components/filter/-->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+<link rel="stylesheet" href="/template/plugin/jquery-ui.theme.min.css"/>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<link rel="stylesheet" href="/components/filter/style.css"/>
+<script src="/components/filter/script.js"></script>
+<div class="b-filter">
+  <div class="row">
+    <div class="col xl3 l4 m4 s12">
+      <div id="filter-btn"><span class="i-show">Использовать фильтр</span><span>Свернуть фильтр</span><i style="background-image: url( '/upload/icons/filter.svg' );"></i></div>
+      <div id="filter">
+        <label>Этаж</label>
+        <div class="b-filter__wrapper">
+          <div id="filter-floors"></div>
+        </div>
+        <p></p>
+        <label>Комнат</label>
+        <div class="b-filter__wrapper">
+          <div id="filter-rooms"></div>
+        </div>
+        <p></p>
+        <label>Площадь</label>
+        <div class="b-filter__wrapper">
+          <div id="filter-square"></div>
+        </div>
+        <p></p>
+        <label>Стоимость</label>
+        <div id="filter-price-value"></div>
+        <div class="b-filter__wrapper">
+          <div id="filter-price"></div>
+        </div>
+        <p></p>
+        <div id="filter-reset">Сбросить параметры</div>
+      </div>
+    </div>
+    <hr class="i-size-L show-on-small hide-on-med-and-up clearfix"/>
+    <div class="col xl9 l8 m8 s12">
+      <table>
+        <thead>
+          <tr>
+            <th>Этаж<br>этажность</th>
+            <th>Секция</th>
+            <th>Площадь</th>
+            <th>Комнат</th>
+            <th>Цена</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody data-orderlink="/form/?id=" data-json="/components/filter/filter.json" data-method="GET"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <div class="b-flat-modal">
+      <div class="b-flat-modal__img"><img src="http://176.99.9.106/sites/default/files/shater1571463_636290.jpg" alt=""/></div>
+      <div class="b-flat-modal__text left-align"><b>Номер квартиры:&nbsp;</b>Б15<br/><b>Корпус:&nbsp;</b>Б<br/><b>Секция:&nbsp;</b>1<br/><b>Этаж:&nbsp;</b>4<br/><b>Площадь:&nbsp;</b>241.5 м²
+        <div class="b-flat-modal__price">2 456 800 руб</div>
+        <div class="b-flat-modal__btn"><a href="" class="btn btn-large">Отправить заявку</a></div>
+        <div class="b-flat-modal__close"><a href="#!" class="modal-close">Вернуться к списку</a></div>
+      </div>
+    </div>
+    <div style="background-image: url( '/upload/icons/error.svg' );" class="modal-content__close modal-close"></div>
+  </div>
+</div>
+<!-- end /components/filter/-->
