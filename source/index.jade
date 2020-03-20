@@ -12,15 +12,45 @@ block content
   section#about.b-middle
     
     .container
-      .row
-        .col.m8.offset-m2.s12
   
-          h1.center-align Жилой квартал «1147»
+      h1.b-h2.center-align Жилой комплекс L’Club
+      
+      .row
+        .col.l4.m12.s12
+          p L-club – четырехсекционный дом клубного формата, расположенный в двух минутах пешком от станции метро «Люблино». 
+          p 23-этажный дом рассчитан всего на 506 квартир с продуманными и функциональными планировочными решениями (от студий до 3-комнатных квартир) и широким выбором площадей (от 37 до 90 м²). 
+          p В подземном паркинге будет организовано 249 машино-мест, а на первом этаже дома разместится детский досуговый центр для маленьких жителей дома. 
+          p На огороженной придомовой территории будут организованы спортивная и детская площадки, а также зона отдыха.
           
-          p Жилой квартал «1147» — проект бизнес-класса, расположенный в Алексеевском районе, внутри сложившегося квартала с развитой социально-бытовой и транспортной инфраструктурой. Квартал расположен в 5 км от Садового кольца и 3 км от ТТК. До станций метро «ВДНХ» и «Алексеевская» можно дойти за 10-15 минут. В пешей доступности находятся также крупнейшие столичные парки «Сокольники» и «Лосиный остров»,
-          p ВДНХ, неподалеку — Ботанический сад.
-          p ЖК«1147» — это 18-ти секционный монолитный дом переменной этажности на 1147 квартир с подземным паркингом, собственным закрытым двором «без машин», фитнес-центром и коммерческими помещениями на первых этажах.
-          p При строительстве и отделке комплекса применяются только современные и высококачественные отделочные и строительные материалы. Энергоэффективные технологии обеспечат будущим жильцам дома комфортное проживание и позволят сэкономить на квартплате.
+          hr
+          .row
+            .col.s12.m6.l12.xl6
+              span#panoramaModalButton.b-panorama-button
+                | 
+                span Панорама 360&deg;
+                
+              #panoramaModal.modal
+                .modal-content( data-url="https://www.estatet.ru/docs/LClub-3d/2019_10/" )
+                .modal-content__close.modal-close( style="background-image: url( '/upload/icons/error.svg' );" )
+            
+            hr.show-on-small.hide-on-med-and-up.clearfix
+            hr.show-on-large.hide-on-med-and-down.hide-on-xlarge.clearfix
+            
+            .col.s12.m6.l12.xl6
+              a( href="/form/" class="btn btn-xlarge") отправить заявку
+          
+        hr.show-on-small.show-on-medium.hide-on-med-and-up.clearfix
+
+        .col.l8.m12.s12.left-align
+          //-include ./modules/title-modal/include
+          
+          include ./modules/fotorama/include
+          
+    //-#titleModal.modal
+      .modal-content
+        img( src="/template/images/ill.png" alt="Жилой комплекс L’Club" )
+              
+      .modal-content__close.modal-close( style="background-image: url( '/upload/icons/error.svg' );" )
           
   section#advantages.i-gray.b-middle
     
@@ -30,85 +60,166 @@ block content
       .row
         .col.m3.s6
           img( src="/upload/advantages/1.png" alt="" )
-          p 10 мин пешком от метро<br>«Алексеевская»
+          p  4 секционный<br>дом клубного формата
           
         .col.m3.s6
           img( src="/upload/advantages/2.png" alt="" )
-          p Рядом парк<br>«Сокольники»
+          p Подземный паркинг<br>на 249 машино-мест
           
         hr.i-size-L.show-on-small.hide-on-med-and-up.clearfix
         hr.show-on-small.hide-on-med-and-up.clearfix
           
         .col.m3.s6
           img( src="/upload/advantages/3.png" alt="" )
-          p Подземный<br>паркинг
+          p Детский досуговый центр<br>на первом этаже
           
         .col.m3.s6
           img( src="/upload/advantages/4.png" alt="" )
-          p Закрытая<br>территория 1 га
+          p Благоустроенная придомовая<br>территория
           
       hr.i-size-L
       
       .row
-        .col.m3.offset-m3.s6
-          img( src="/upload/advantages/5.png" alt="" )
-          p Панорамные виды
+        .col.m3.s6
+          img( src="/upload/advantages/1.png" alt="" )
+          p Cпортивная<br>и детская площадки,<br>зона отдыха
           
         .col.m3.s6
-          img( src="/upload/advantages/6.png" alt="" )
-          p Собственный<br>фитнес-клуб
+          img( src="/upload/advantages/2.png" alt="" )
+          p Высокая<br>транспортная<br>доступность
           
-  section#gallery.b-middle.b-gallery
+        hr.i-size-L.show-on-small.hide-on-med-and-up.clearfix
+        hr.show-on-small.hide-on-med-and-up.clearfix
+          
+        .col.m3.s6
+          img( src="/upload/advantages/3.png" alt="" )
+          p Развитая<br>инфраструктура<br>района
+          
+        .col.m3.s6
+          img( src="/upload/advantages/4.png" alt="" )
+          p Доступные<br>финансовые<br>программы
+          
+  section#arhitectura.arhitectura
   
     .container
     
-      h2.center-align Ваш будущий дом
+      h1.b-h2.center-align Архитектура
       
-      .fotorama( data-width="100%" data-height="70%" data-nav="thumbs" data-thumbwidth="185" data-thumbheight="104" data-loop="true" )
-        img( src="/upload/gallery/1.jpg" alt="" )
-        img( src="/upload/gallery/2.jpg" alt="" )
-        img( src="/upload/gallery/3.jpg" alt="" )
+      .row
+        .col.l4.m12.s12
+          p
+            | Благородная 
+            nobr шоколадно-бежевая
+            |  цветовая гамма фасадов подчеркивает статус и выгодно выделяет L’Club на фоне окружения, благодаря чему, дом становится новой архитектурной доминантой района.
+          p
+            | Авторские фасады от международного архитектурного бюро SPEECН с использованием искусственного камня White Hills и стильных металлических панелей придают элегантный внешний вид, а также обеспечивают надежность и долговечность конструкции, сохраняя при этом тепло и комфорт в доме. Искусственный камень лучше натурального выдерживает климатические нагрузки в течение длительного срока эксплуатации и производится из экологического сырья.
+          p
+            | Главная архитектурная особенность дома L’Club — квартиры на верхних этажах с панорамным остеклением. Виды из окон этих квартир в буквальном смысле откроют вам новые горизонты. Любоваться рассветом с чашкой ароматного кофе, нежиться в лучах яркого дневного солнца и восхищаться красотой заката — это ли не идеальный день…
+          hr
+          .row
+            hr.show-on-small.hide-on-med-and-up.clearfix
+            hr.show-on-large.hide-on-med-and-down.hide-on-xlarge.clearfix
+            .col.s12.m6.l12.xl6
+              a.btn.btn-xlarge(href="/form/") отправить заявку
+              
+        hr.show-on-small.show-on-medium.hide-on-med-and-up.clearfix
         
-      .center-align.b-gallery-note Данное изображение носит информационный характер и не является публичной офертой.
+        .col.l8.m12.s12.left-align
+          .b-fotorama
+            .fotorama(data-width="100%" data-height="70%" data-ratio="1" data-arrows="true" data-click="true" data-swipe="true" data-autoplay="3000" data-loop="true")
+              .b-fotorama__frame
+                .b-fotorama__container.i-show
+                  span.b-fotorama__image(style="background-image: url('/upload/gallery/1.jpg');")
+              .b-fotorama__frame
+                .b-fotorama__container.i-show
+                  span.b-fotorama__image(style="background-image: url('/upload/gallery/1.jpg');")
+              .b-fotorama__frame
+                .b-fotorama__container.i-show
+                  span.b-fotorama__image(style="background-image: url('/upload/gallery/1.jpg');")
+          .b-top-gallery__note
+            | Данное изображение носит информационный характер и не является публичной офертой.
+
+            
+  section#contacts
+  
+    .container
+    
+      .row
+        
+        .col.m6.s12
+          script( src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" )
+          script
+            | var yMapPlacemarksIconsSource = '/template/images/';
+          #map
+        
+        .col.m6.s12
+      
+          .b-contacts
+            p Люблинский район зеленый, ухоженный и давно обжитой. Здесь функционирует полноценный набор необходимых для жизни современного горожанина объектов инфраструктуры. В пешей доступности от строящегося дома находятся поликлиники, детские сады и школы, современный фитнес-клуб с бассейном La Salute sports &amp; relax club, ТРЦ «Люблино» и «Люблинский пассаж».
+            p Любители прогулок на свежем воздухе оценят то, что L’Club находится рядом с Люблинским сквером, также в пешей доступности от клубного дома расположено еще несколько парков и зон отдыха: масштабный Люблинский парк с прудами, скверы им. М.П. Судакова и Антона Чехова, парк Артема Боровика, парк 65-летия Победы и Дюссельдорфский парк с ландшафтным дизайном.
+              
+            hr.i-size-L
+            
+            .row
+              .col.s5
+                img( src="/template/images/logo-lclub.svg" alt="L-CLUB Дом в Люблино" )
+                
+              .col.s7.right-align
+                .b-contacts-phone
+                  b 8 800 567 93 28
+                  br
+                  | Москва, Совхозная ул
+              
+            hr.i-size-L
+            
+            a.btn.btn-xlarge( href="/form/" ) отправить заявку
+    
+      
       
   section#prices.b-middle
     
     .container
       h2.center-align Цены на квартиры
       
+      .row
+          
+        #planImage.col.l5.push-l5.offset-l1.m12.s12
+          img#planModalButton( src="/upload/plan.svg" alt="Жилой комплекс L’Club" width="100%" data-magnify-src="/upload/plan-big.jpg" )
+      
+        .col.l4.pull-l6.offset-l1.m12.s12
+          hr.i-size-L
+          p L’Club создан для комфортной жизни. В доме представлены 1-, 2- и 3-комнатные квартиры с продуманными и функциональными планировочными решениями. Широкий выбор площадей позволяет выбрать идеальный вариант для вас и ваших близких. Окна двух и трехкомнатных квартир, расположенных в 3 и 4 секциях, выходят на Люблинский сквер, двухкомнатные квартиры в 1 и 2 секциях имеют окна на две стороны света.
+          
+      #planModal.modal
+        .modal-content
+          img( src="/upload/plan-big.jpg" alt="Жилой комплекс L’Club" width="100%" )
+                
+        .modal-content__close.modal-close( style="background-image: url( '/upload/icons/error.svg' );" )
+                    
+      hr.i-size-L 
+      
       include ./modules/content-card/include
           
       hr.i-size-L
       
       .center-align
-        a#filter-section-btn.btn.btn-large( href="" ) Все варианты
-        
+        a#filter-section-btn.btn.btn-large( href="" )
+          span Все цены
+          span.hide Скрыть цены
+          
   #filter-section
   
     .container
   
       include ./components/filter/template
         
-  section.b-middle
+  section#process.b-middle.i-gray
   
-    .b-middle-wrapper.center-align
-    
-      h2 Подземный паркинг
-      p Подземный паркинг оборудован лифтами,<br>системой контроля доступа<br>и видеонаблюдением.
-    
-      hr.i-size-L
+    .container
       
-      .b-parking( style="background-image:url(/template/images/parking-bg.jpg);" )
-        .container
-          .b-parking-h3 Индивидуальные и семейные<br>парковочные места
-          
-          .row
-            .col.m2.offset-m3.s6
-              img( src="/template/images/parking1.png" alt="" )
-              p <span>2</span><br>уровня
-            .col.m2.offset-m2.s6
-              img( src="/template/images/parking2.png" alt="" )
-              p <span>1252</span><br>машино-места
+      h2.center-align Ход строительства
+      
+      include ./modules/fotorama/process
               
   section#banks.b-middle
   
@@ -118,44 +229,44 @@ block content
       
       include ./modules/banks-table/include
       
-  section#process.b-middle.i-dark-gray
+  section#news
+  
+    .container
+    
+      include ./modules/news/include
+      
+  section#command
   
     .container
       
-      h2.center-align Ход строительства
+      h2.center-align Команда проекта
       
-      .fotorama.hide-on-small-only( data-width="100%" data-arrows="true" data-swipe="true" data-ratio="3" data-loop="true" )
-        div
-          include ./modules/photo-card/include
-        div
-          include ./modules/photo-card/include
-        div
-          include ./modules/photo-card/include
-      
-      .fotorama.hide-on-med-and-up( data-width="100%" data-arrows="true" data-swipe="true" data-ratio=".85" data-loop="true" )
-        div
-          include ./modules/photo-card/include-single
-        div
-          include ./modules/photo-card/include-single
-        div
-          include ./modules/photo-card/include-single
-            
-  section#contacts
-  
-    script( src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" )
-    #map
-      
-    .b-contacts.center-align
-      h2 Контакты
-      p 8 800 567 93 28
-      p Москва, СВАО, Маломосковская, 14.<br>От метро «Алексеевская» — 10 мин.<br>от «ВДНХ» — 15 мин.
-      p
-        b GPS
-      p
-        a( href="" ) 55.812848, 37.646856
+      .row
         
-      p
-        a( href="" ) Проектная декларация
+        .col.m6.s12
+          
+          .row
+            .col.s4.center-align
+              img( src="/upload/command/1.gif" width="103" height="83" alt="" )
+            .col.s8
+              p
+                b ТПУ Люблини
+              p Компания  успешно работает на российском рынке с 2003 года и является одним из лидеров в девелопменте жилой и коммерческой недвижимости.
+              p Портфель компании – это 37 объектов общей площадью 5 миллионов кв. м в Москве, Московской области и Сочи. шестикратный «Девелопер года», по версии RREF Awards, ProEstate&CRE Awards, CRE Awards, Move Realty Awards, Urban Awards и «Рекорды рынка недвижимости».
+              
+        hr.show-on-small.hide-on-med-and-up.clearfix.i-size-L
+          
+        .col.m6.s12
+        
+          .row
+            .col.s4.center-align
+              img( src="/upload/command/2.gif" width="69" height="80" alt="" )
+            .col.s8
+              p
+                b АО «Центр-Инвест»
+              p Компания  успешно работает на российском рынке с 2003 года и является одним из лидеров в девелопменте жилой и коммерческой недвижимости.
+              p Портфель компании – это 37 объектов общей площадью 5 миллионов кв. м в Москве, Московской области и Сочи. шестикратный «Девелопер года», по версии RREF Awards, ProEstate&CRE Awards, CRE Awards, Move Realty Awards, Urban Awards и «Рекорды рынка недвижимости».
+
         
   section#docs.b-middle
     

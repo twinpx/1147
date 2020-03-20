@@ -1,0 +1,202 @@
+<title></title>
+<center>
+<table border="0" cellpadding="0" cellspacing="0" style="width: 720px;" width="699">
+	<colgroup>
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr bgcolor="#f3f3f3" height="33">
+			<td colspan="10" height="33" style="height: 33px; width: 700px; text-align: center;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;"><em>Вы получили это письмо, потому что ранее обращались в компанию Est-a-Tet.</em></span></span></td>
+		</tr>
+		<tr>
+			<td bgcolor="#959595" rowspan="2" style="width: 11px;"></td>
+			<td style="width: 19px;"><span style="color:#696969;"><span style="font-family:arial,helvetica,sans-serif;">&nbsp;&nbsp;</span></span></td>
+			<td colspan="6" style="padding: 30px 20px 20px;">
+			<p><span style="color:#666666;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:16px;"><strong>Алексей,</strong><br />
+			<br />
+			В продолжение телефонного разговора направляю Вам информацию о жилом комплексе &laquo;Позитив&raquo;. Напоминаю, что до 31 июля на все квартиры в комплексе действует <strong>скидка 10%</strong> и <strong>пониженная ставка ипотеки</strong> от Сбербанка &ndash; всего <nobr><strong>от 6%</strong>!</nobr> Готова подобрать для Вас квартиру и заказать бесплатную ипотечную консультацию! Жду Вашего звонка или письма!</span></span></span></p>
+			</td>
+			<td style="width: 18px;"><span style="color:#696969;"><span style="font-family:arial,helvetica,sans-serif;">&nbsp;&nbsp;</span></span></td>
+			<td bgcolor="#959595" rowspan="2" style="width: 11px;"></td>
+		</tr>
+		<tr height="20">
+			<td bgcolor="#959595" colspan="10" height="20" style="height: 20px; width: 709px;"></td>
+		</tr>
+		<tr>
+			<td bgcolor="#f3f3f3" style="height: 70px; width: 11px;"></td>
+			<td style="width: 19px;"></td>
+			<td colspan="6"><span class="tisa_label header.est_html">{Шапка КП HTML}</span></td>
+			<td style="width: 18px;"></td>
+			<td bgcolor="#f3f3f3" style="width: 11px;"></td>
+		</tr>
+		<tr>
+			<td bgcolor="#f3f3f3" style="height: 70px; width: 11px;"></td>
+			<td style="width: 19px;"></td>
+			<td colspan="6">
+			<table align="center">
+				<tbody>
+					<tr valign="middle">
+						<td style="width: 630px; padding-top: 15px; padding-bottom: 15px;"><span style="font-size:20px;"><span style="color:#696969;"><span style="font-family:arial,helvetica,sans-serif;">Выбранные квартиры</span></span></span></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+			<td style="width: 18px;"></td>
+			<td bgcolor="#f3f3f3" style="width: 11px;"></td>
+		</tr>
+		<tr>
+			<td bgcolor="#f3f3f3" style="width: 11px;"></td>
+			<td style="width: 19px;"></td>
+			<td colspan="6" style="width: 203px; text-align: center; vertical-align: top;" width="203">
+			<div class="repeat_begin">--начало повторителя--</div>
+			</td>
+			<td style="width: 18px;"></td>
+			<td bgcolor="#f3f3f3" style="width: 11px;"></td>
+		</tr>
+		<tr>
+			<td bgcolor="#ff0000" style="height: 150px; width: 11px;"></td>
+			<td style="width: 19px;"></td>
+			<td colspan="3" rowspan="1" style="width: 203px; padding-left: 30px; background-color: rgb(255, 0, 0);" width="203"><span style="color:#ffffff;"><strong><span style="font-size:16px;"><span style="font-family:Arial,Helvetica,sans-serif;">Комнат&nbsp;<span class="tisa_label body.tisa_rooms">{Комнат}</span><br />
+			Этаж&nbsp;<span class="tisa_label body.tisa_floor">{Этаж (ряд)}</span></span></span><br />
+			<span class="tisa_label body.tisa_addressid">{Адрес (строение)}</span><br />
+			<span style="font-size:18px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span class="tisa_label body.tisa_price">{Стоимость продажи}</span></span></span></strong></span></td>
+			<td colspan="2" rowspan="1" style="width: 203px; padding-left: 30px;" width="203"></td>
+			<td rowspan="1" style="width: 203px; padding-left: 30px;" width="203"></td>
+			<td style="width: 18px;"></td>
+			<td bgcolor="#f3f3f3" style="width: 11px;"></td>
+		</tr>
+		<tr height="154">
+			<td bgcolor="#ff0000" height="344" rowspan="1" style="height: 344px; width: 11px;"></td>
+			<td rowspan="1" style="width: 19px;"></td>
+			<td colspan="6" rowspan="1" style="width: 203px; text-align: center;" width="203"><img alt="{Фото 0 Планировка для сайта}" class="tisa_image" src="{body.tisa_imageurl_image}" /></td>
+			<td rowspan="1" style="width: 18px;"></td>
+			<td bgcolor="#f3f3f3" rowspan="1" style="width: 11px;"></td>
+		</tr>
+		<tr height="1px">
+			<td bgcolor="#f3f3f3" style="width: 11px;"></td>
+			<td style="width: 19px;"></td>
+			<td colspan="6" style="width: 203px; text-align: center; vertical-align: top;" width="203">
+			<div class="repeat_end">--конец повторителя--</div>
+			</td>
+			<td style="width: 18px;"></td>
+			<td bgcolor="#f3f3f3" style="width: 11px;"></td>
+		</tr>
+		<tr height="154">
+			<td bgcolor="#ff0000" rowspan="1" style="width: 11px;"></td>
+			<td rowspan="1" style="width: 19px;"></td>
+			<td colspan="6" rowspan="1" style="width: 203px; text-align: center; vertical-align: top;" width="203"></td>
+			<td rowspan="1" style="width: 18px;"></td>
+			<td bgcolor="#f3f3f3" rowspan="1" style="width: 11px;"></td>
+		</tr>
+		<tr>
+			<td bgcolor="#f3f3f3" style="height: 70px; width: 11px;"></td>
+			<td style="width: 19px;"></td>
+			<td colspan="6"></td>
+			<td style="width: 18px;"></td>
+			<td bgcolor="#f3f3f3" style="width: 11px;"></td>
+		</tr>
+		<tr>
+			<td bgcolor="#ff0000" rowspan="1" style="width: 11px;"></td>
+			<td rowspan="1" style="width: 19px;"></td>
+			<td colspan="6" style="width: 203px; text-align: center; padding-bottom: 20px; padding-top: 10px;" width="203"></td>
+			<td rowspan="1" style="width: 18px;"></td>
+			<td bgcolor="#f3f3f3" rowspan="1" style="width: 11px;"></td>
+		</tr>
+		<tr height="107">
+			<td bgcolor="#f3f3f3" height="107" style="height: 107px; width: 11px;"></td>
+			<td style="width: 19px;"></td>
+			<td colspan="6"></td>
+			<td style="width: 18px;"></td>
+			<td bgcolor="#f3f3f3" style="width: 11px;"></td>
+		</tr>
+		<tr>
+			<td bgcolor="#959595" rowspan="1" style="width: 11px;"></td>
+			<td style="width: 19px;"></td>
+			<td colspan="6" rowspan="1" style="padding: 15px;"></td>
+			<td style="width: 18px;"></td>
+			<td bgcolor="#959595" rowspan="1" style="width: 11px;"></td>
+		</tr>
+		<tr height="20">
+			<td bgcolor="#959595" colspan="10" height="20" style="height:20px;"></td>
+		</tr>
+		<tr height="107">
+			<td bgcolor="#f3f3f3" height="107" style="height: 107px; width: 11px;"></td>
+			<td style="width: 19px;"></td>
+			<td colspan="6"></td>
+			<td style="width: 18px;"></td>
+			<td bgcolor="#f3f3f3" style="width: 11px;"></td>
+		</tr>
+		<tr>
+			<td bgcolor="#959595" rowspan="1" style="width: 11px;"></td>
+			<td style="width: 19px;"></td>
+			<td colspan="6" rowspan="1" style="padding: 15px;">
+			<table align="center">
+				<tbody>
+					<tr height="70" style="height:70px;" valign="middle">
+						<td style="width: 250px; text-align: center;"><img alt="" src="https://cp.unisender.com/ru/user_file?resource=images&amp;user_id=2895493&amp;name=2018/test/manager.jpg" style="width: 217px; height: 187px;" /></td>
+						<td style="width: 519px; padding: 30px 20px 30px 50px;" width="530"><span style="color:#555555;"><span style="line-height:1.5;"><span style="font-size:22px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span class="tisa_label footer.firstname">{Имя}</span>&nbsp;<span class="tisa_label footer.lastname">{Фамилия}</span></span></span><br />
+						<span style="font-size:18px;"><span style="font-family:Arial,Helvetica,sans-serif;">8 (495) 223 88 88<br />
+						<span class="tisa_label footer.mobilephone">{Мобильный телефон}</span></span></span></span></span><br />
+						&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+			<td style="width: 18px;"></td>
+			<td bgcolor="#959595" rowspan="1" style="width: 11px;"></td>
+		</tr>
+		<tr height="20">
+			<td bgcolor="#959595" colspan="10" height="20" style="height:20px;"></td>
+		</tr>
+		<tr bgcolor="#bfbfbf" height="22">
+			<td colspan="10" height="22" style="height:22px;"></td>
+		</tr>
+		<tr bgcolor="#bfbfbf" height="36">
+			<td colspan="2" height="146" rowspan="3" style="height: 146px; text-align: center;"></td>
+			<td colspan="6" style="text-align: center;"><span style="color:#FFFFFF;"><span style="font-size:18px;"><span style="font-family:arial,helvetica,sans-serif;">Больше новостей, специальных предложений и скидок в наших группах</span></span></span></td>
+			<td colspan="2" rowspan="3"></td>
+		</tr>
+		<tr bgcolor="#bfbfbf" height="59">
+			<td colspan="6" height="59" style="height:59px;">
+			<table align="center">
+				<tbody>
+					<tr>
+						<td align="center" style="padding: 5px 15px 5px 15px;" valign="middle"><a href="https://www.instagram.com/estatet.ru/" target="_blank"><img alt="" src="https://cp.unisender.com/ru/user_file?resource=images&amp;user_id=2895493&amp;name=1-obshie/soc_insta.png" style="width: 40px; height: 40px;" /></a></td>
+						<td align="center" style="padding: 5px 15px 5px 15px;" valign="middle"><a href="https://www.facebook.com/estatet.ru" target="_blank"><img alt="" src="https://cp.unisender.com/ru/user_file?resource=images&amp;user_id=2895493&amp;name=1-obshie/soc_fb.png" style="width: 40px; height: 40px;" /></a></td>
+						<td align="center" style="padding: 5px 15px 5px 15px;" valign="middle"><a href="https://t.me/estatet1" target="_blank"><img alt="" src="https://cp.unisender.com/ru/user_file?resource=images&amp;user_id=2895493&amp;name=1-obshie/soc_tg.png" style="width: 40px; height: 40px;" /></a></td>
+						<td align="center" style="padding: 5px 15px 5px 15px;" valign="middle"><a href="https://vk.com/est_a_tet" target="_blank"><img alt="" src="https://cp.unisender.com/ru/user_file?resource=images&amp;user_id=2895493&amp;name=1-obshie/soc_vk.png" style="width: 40px; height: 40px;" /></a></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr bgcolor="#bfbfbf" height="51">
+			<td colspan="6" height="51" style="height:51px;">
+			<table align="center">
+				<tbody>
+					<tr valigh="center">
+						<td style="width: 150px; text-align: center;" width="130"><a href="https://www.estatet.ru/about/?utm_source=email&amp;utm_medium=email&amp;utm_campaign=object_positive" style="text-decoration: none" target="_blank"><span style="color:#000000;"><span style="font-size:18px;"><font face="arial, helvetica, sans-serif">О компании</font></span></span></a></td>
+						<td style="width: 150px; text-align: center;" width="130"><a href="https://www.estatet.ru/news/?utm_source=email&amp;utm_medium=email&amp;utm_campaign=object_positive" style="text-decoration: none" target="_blank"><span style="color:#000000;"><span style="font-size:18px;"><span style="font-family:arial,helvetica,sans-serif;"><font face="arial, helvetica, sans-serif">Новости</font></span></span></span></a></td>
+						<td style="width: 150px; text-align: center;" width="130"><a href="https://www.estatet.ru/about/contacts/?utm_source=email&amp;utm_medium=email&amp;utm_campaign=object_positive" style="text-decoration: none" target="_blank"><span style="color:#000000;"><span style="font-size:18px;"><font face="arial, helvetica, sans-serif">Контакты</font></span></span></a></td>
+						<td style="width: 150px; text-align: center;" width="130"><a href="http://family.estatet.ru/?utm_source=email&amp;utm_medium=email&amp;utm_campaign=object_positive" style="text-decoration: none" target="_blank"><span style="color:#000000;"><span style="font-size:18px;"><font face="arial, helvetica, sans-serif">Family Club</font></span></span></a></td>
+					</tr>
+				</tbody>
+			</table>
+			&nbsp;<br />
+			&nbsp;
+			<div style="text-align: center;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;"><em>Вы получили это письмо, потому что ранее обращались в компанию Est-a-Tet.<br />
+			&nbsp;</em></span></span></div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>

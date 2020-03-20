@@ -1,29 +1,113 @@
-﻿.row
-  .col.m4.s12
-    .b-content-card
-      .b-content-card__wrapper
-        .b-letter <span>1</span> Комнатные<br>квартиры
-        p от 40 м<sup>2</sup><br>от 175 680 р./м<sup>2</sup>
-        .b-price от <span>175 680 000</span> р.
-        .btn.btn-large Показать варианты
-        
-  hr.show-on-small.hide-on-med-and-up.clearfix
+﻿.b-content-card__wrapper( data-ajax-url="/ajax/flat.html" data-method="GET" )
+
+  //-.row.b-flats.i-slide-top-animation
+  
+  .b-heading
+    span Выберите количество комнат
     
-  .col.m4.s12
-    .b-content-card
-      .b-content-card__wrapper
-        .b-letter <span>2</span> Комнатные<br>квартиры
-        p от 40 м<sup>2</sup><br>от 175 680 р./м<sup>2</sup>
-        .b-price от <span>240 580 000</span> р.
-        .btn.btn-large Показать варианты
-        
-  hr.show-on-small.hide-on-med-and-up.clearfix
+  hr
     
-  .col.m4.s12
-    .b-content-card
-      .b-content-card__wrapper
-        .b-letter <span>3</span> Комнатные<br>квартиры
-        p от 40 м<sup>2</sup><br>от 175 680 р./м<sup>2</sup>
-        .b-price от <span>300 680 000</span> р
-        .btn.btn-large Показать варианты
+  .row.b-flats
+    .col.m4.s12
+      .b-content-card( data-flats="1" ) Однокомнатные
+          
+    hr.show-on-small.hide-on-med-and-up.clearfix.i-size-S
+      
+    .col.m4.s12
+      .b-content-card( data-flats="2" ) Двухкомнатные
+          
+    hr.show-on-small.hide-on-med-and-up.clearfix.i-size-S
+      
+    .col.m4.s12
+      .b-content-card( data-flats="3" ) Трехкомнатные
+      
+  hr
+   
+  .b-flats__blocks
+  
+    .b-flats__block( data-flats="1" )
+  
+      .b-heading
+        span Выберите планировку
         
+      hr
+    
+      .row
+        .col.xl3.l6.m6.s12
+          img.responsive-img( src="/upload/flats/1.gif" alt="" data-id="789" )
+              
+        hr.show-on-small.hide-on-med-and-up.clearfix.i-size-S
+          
+        .col.xl3.l6.m6.s12
+          img.responsive-img( src="/upload/flats/2.gif" alt="" data-id="789" )
+              
+        hr.hide-on-xl.clearfix.i-size-S
+          
+        .col.xl3.l6.m6.s12
+          img.responsive-img( src="/upload/flats/3.gif" alt="" data-id="789" )
+              
+        hr.show-on-small.hide-on-med-and-up.clearfix.i-size-S
+          
+        .col.xl3.l6.m6.s12
+          img.responsive-img( src="/upload/flats/3.gif" alt="" data-id="789" )
+          
+      hr.i-size-S
+    
+      .row
+        .col.xl3.l6.m6.s12
+          img.responsive-img( src="/upload/flats/1.gif" alt="" data-id="789" )
+              
+        hr.show-on-small.hide-on-med-and-up.clearfix.i-size-S
+          
+        .col.xl3.l6.m6.s12
+          img.responsive-img( src="/upload/flats/2.gif" alt="" data-id="789" )
+          
+      hr
+            
+    .b-flats__block( data-flats="2" )
+  
+      .b-heading
+        span Выберите планировку
+        
+      hr
+    
+      .row
+        .col.xl3.l6.m6.s12
+          img.responsive-img( src="/upload/flats/1.gif" alt="" data-id="789" )
+              
+        hr.show-on-small.hide-on-med-and-up.clearfix.i-size-S
+          
+        .col.xl3.l6.m6.s12
+          img.responsive-img( src="/upload/flats/2.gif" alt="" data-id="789" )
+              
+        hr.hide-on-xl.clearfix.i-size-S
+          
+        .col.xl3.l6.m6.s12
+          img.responsive-img( src="/upload/flats/3.gif" alt="" data-id="789" )
+          
+      hr
+    
+    .b-flats__block( data-flats="3" )
+  
+      .b-heading
+        span Выберите планировку
+        
+      hr
+    
+      .row
+        .col.xl3.l6.m6.s12
+          img.responsive-img( src="/upload/flats/1.gif" alt="" data-id="789" )
+              
+        hr.show-on-small.hide-on-med-and-up.clearfix.i-size-S
+          
+        .col.xl3.l6.m6.s12
+          img.responsive-img( src="/upload/flats/2.gif" alt="" data-id="789" )
+              
+        hr.hide-on-xl.clearfix.i-size-S
+          
+        .col.xl3.l6.m6.s12
+          img.responsive-img( src="/upload/flats/3.gif" alt="" data-id="789" )
+          
+      hr
+          
+  .b-flats__info-block

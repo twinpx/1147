@@ -20,15 +20,41 @@ script( src="/components/filter/script.js" )
   
       #filter
           
+        .b-filter__input
+          span от
+          | 
+          input#filter-floors-input-min( type="text" value="" )
+          | 
+          span до
+          | 
+          input#filter-floors-input-max( type="text" value="" )
         label Этаж
         .b-filter__wrapper
           #filter-floors
         p
+        
+        .b-filter__input
+          span от
+          | 
+          input#filter-rooms-input-min( type="text" value="" )
+          | 
+          span до
+          | 
+          input#filter-rooms-input-max( type="text" value="" )
         label Комнат
         .b-filter__wrapper
           #filter-rooms
         p
-        label Площадь
+        
+        .b-filter__input
+          span от
+          | 
+          input#filter-square-input-min( type="text" value="" )
+          | 
+          span до
+          | 
+          input#filter-square-input-max( type="text" value="" )
+        label Площадь(м²)
         .b-filter__wrapper
           #filter-square
         p
@@ -43,7 +69,7 @@ script( src="/components/filter/script.js" )
         
     .col.xl9.l8.m8.s12
   
-      table
+      table#filterTable
         
         thead
           tr

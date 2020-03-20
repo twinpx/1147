@@ -1,0 +1,226 @@
+@import '../../styl/component-include.styl'
+
+.b-fotorama
+
+  .fotorama__arr
+    margin-top -30px
+    
+    #process &
+      margin-top -40px
+
+    /*&:after
+      content ''
+      display block
+      border-top 1px solid #fff
+      border-right 1px solid #fff
+      width 30px
+      height 30px
+      position absolute
+      top 0
+      transition( opacity .5s ease )*/
+    
+    &.fotorama__arr--prev
+      background url( './images/arrow-left.svg' ) no-repeat center
+      background-size cover
+      width 60px
+      height 60px
+      margin-left 30px
+
+      /*&:after
+        transform( rotate(-135deg))
+        left 19px*/
+      
+    &.fotorama__arr--next
+      background url( './images/arrow-right.svg' ) no-repeat center
+      background-size cover
+      width 60px
+      height 60px
+      margin-right 30px
+
+      /*&:after
+        transform( rotate(45deg))
+        right 19px*/
+        
+    @media( max-width 767px )
+      display none !important
+        
+  .fotorama__nav-wrap
+      position relative
+      
+  .fotorama__nav
+    position absolute
+    bottom 40px
+    left 0
+    width 100%
+    height 30px
+    
+    @media( max-width 767px )
+      bottom 10px
+    
+  .fotorama__nav--dots .fotorama__nav__frame
+    height 0px
+    
+  .fotorama__dot
+    width 0
+    height 0
+    border-width 5px
+    
+  .fotorama__nav__frame.fotorama__active .fotorama__dot
+    width 0
+    height 0
+    border-width 5px
+    border-color #73a633
+      
+  &__frame
+    position relative
+    height 100%
+
+    &:before
+      content ''
+      display block
+      background url("images/preloader.svg") no-repeat center
+      width 50px
+      height 50px
+      position absolute
+      top 50%
+      left 50%
+      margin -25px 0 0 -25px
+      animation: impression-preloader 1s linear infinite
+
+  &__container
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    color #fff
+
+  &__container.i-show .b-fotorama__image,
+  &__container.i-show .container
+    opacity 1
+
+@media (max-width:1024px) {
+	.b-fotorama__sticky-content {
+		text-align: center
+	}
+	.b-fotorama__sticky-content p {
+		margin-right: auto;
+		margin-left: auto
+	}
+}
+
+.b-fotorama__sticky-content .b-h1
+	transform( translateY(-100px))
+
+/*@media (max-width:570px) {
+	.b-fotorama__sticky-content .b-h1 {
+		font-size: 15pt;
+		margin-bottom: 20px
+	}
+}*/
+
+.b-fotorama__sticky-content p
+	transform( translateY(-100px))
+
+.b-fotorama__sticky-content .b-fotorama__text-note
+	transform( translateY(-100px))
+
+/*@media (max-width:570px) {
+	.b-fotorama__sticky-content p {
+		font-size: 10.5pt;
+		padding: 6px 30px
+	}
+}*/
+
+.b-fotorama__sticky-content p,
+.b-fotorama__sticky-content .b-h1,
+.b-fotorama__sticky-content .b-fotorama__text-note
+	opacity 0
+	transition( all 1s ease)
+
+.b-fotorama__sticky-content.i-load .b-h1,
+.b-fotorama__sticky-content.i-load p,
+.b-fotorama__sticky-content.i-load .b-fotorama__text-note
+	opacity 1
+	transform( translateY(0))
+
+.b-fotorama__sticky-content .container {
+	text-align: center;
+	opacity: 0;
+	transition: opacity .5s ease;
+	-webkit-transition: opacity .5s ease;
+	-moz-transition: opacity .5s ease;
+	-ms-transition: opacity .5s ease;
+	pointer-events: none;
+	z-index: 2
+}
+
+.b-fotorama__sticky-content .btn
+	opacity 0
+	transition( opacity .5s ease )
+
+.b-fotorama__sticky-content:hover .btn {
+	opacity: 1
+}
+
+.b-fotorama__image {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	opacity: 0;
+	transition: opacity .5s ease;
+	-webkit-transition: opacity .5s ease;
+	-moz-transition: opacity .5s ease;
+	-ms-transition: opacity .5s ease;
+	z-index: 1
+  
+  .i-contain & {
+    background-size: contain;
+  }
+}
+
+.b-fotorama__cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 2
+}
+
+.b-fotorama__note {
+	color: #fff;
+	font-size: 7pt;
+	text-align: center;
+	position: relative;
+}
+
+.b-fotorama__note margin,
+.b-fotorama__note p {
+	margin: 0;
+	padding: 0 20px;
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	width: 100%;
+	z-index: 3
+}
+
+@keyframes impression-preloader {
+	0% {
+		transform( rotate(0))
+	}
+	50% {
+		transform( rotate(180deg))
+	}
+	100% {
+		transform( rotate(360deg))
+	}
+}

@@ -1,13 +1,13 @@
 {
-  "name": "est-a-tet",
+  "name": "l-club",
   "version": "0.0.0",
-  "description": "est-a-tet web site",
+  "description": "l-club web site",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "est-a-tet"
+    "l-club"
   ],
   "author": "Tatiana",
   "license": "ISC",
@@ -18,7 +18,7 @@
     "grunt-contrib-connect": "^0.9.0",
     "grunt-contrib-copy": "^0.7.0",
     "grunt-contrib-jade": "^0.14.0",
-    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-jshint": "^0.12.0",
     "grunt-contrib-stylus": "^0.20.0",
     "grunt-contrib-uglify": "^0.7.0",
     "grunt-contrib-watch": "^0.6.1",

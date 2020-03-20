@@ -4,7 +4,20 @@
   
   $( function() {
     
-    /*$('.b-fotorama .fotorama').on('fotorama:ready', function (e, fotorama) {
+    $( '.b-top-gallery .b-fotorama__gallery' ).fotorama();
+    
+    setTimeout( function() {
+      $( '.b-fotorama__container, .b-fotorama__sticky-content' ).addClass( 'i-load' );
+    }, 100);
+        
+    if ( window.matchMedia( "(max-width: 600px)" ).matches ) {
+      $( '.b-top-gallery .b-fotorama__gallery' ).fotorama().data( 'fotorama' ).resize({
+        height: '500px',
+        ratio: undefined
+      });
+    }
+    
+    /*$('.b-fotorama .fotorama').on( 'fotorama:ready', function (e, fotorama) {
     
       $( '.b-fotorama' ).each( function() {
         var $bFotorama = $( this );

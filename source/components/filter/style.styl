@@ -6,6 +6,7 @@
 #filter
   background-color #f7f7f7
   padding 38px 12px
+  //height 540px
   
   @media( max-width 600px )
     display none
@@ -42,7 +43,7 @@
     
   
   label
-    font-size 7pt
+    font-size 9pt
     font-weight bold
     text-transform uppercase
     padding-bottom 10px
@@ -50,6 +51,9 @@
     border-bottom 1px solid #c7c7bb
     display block
     color #333333
+    
+  .ui-widget
+    font-family "Akrobat", "Open Sans Condensed", Arial, sans-serif
     
   .ui-widget.ui-widget-content
     height 7px
@@ -68,7 +72,7 @@
     height 24px
     border-radius 12px
     background-color #fff
-    border 2px solid #333
+    border 3px solid #73a633
     top -9px
     margin-left -12px
     
@@ -76,7 +80,7 @@
       outline none
     
   .ui-slider .ui-slider-range
-    background-color #333
+    background-color #73a633
     height 7px
     
   .ui-slider-handle
@@ -98,33 +102,65 @@
   .ui-button.ui-state-active:hover
     color #333
     
-.b-filter__wrapper
-  margin-bottom 35px
-  height 7px
-  background-color #f1f1f1
-  box-shadow 0 1px 0 rgba( 153,153,153,.39 ) inset
-  border-radius 4px
-  border none
-  padding 0 12px
+.b-filter
+    
+  &__input
+    text-align right
+    line-height 15px
+    font-size 9pt
+    transform( translateY( 19px ))
+    
+    input[ type="text" ]:not(.browser-default)
+      height 20px
+      line-height 20px
+      font-size 9pt
+      display inline-block
+      width 20px
+      margin 0
+      border none
+      background-color rgba( 255,255,255,.9 )
+      text-align center
+      
+      &:focus:not([readonly])
+        border none
+        box-shadow none
+
+  &__wrapper
+    margin-bottom 35px
+    height 7px
+    background-color #f1f1f1
+    box-shadow 0 1px 0 rgba( 153,153,153,.39 ) inset
+    border-radius 4px
+    border none
+    padding 0 12px
   
 #filter-price-value
-  font-size 8pt
+  font-size 9pt
   margin -32px 0 17px
 
 #filter-reset
-  font-size 8pt
+  font-size 9pt
   cursor pointer
   margin-top 50px
-  text-decoration underline
   
 .b-filter
+
+  thead,
+  tr,
+  th
+    background-color #fff
   
   th
+    position sticky
+    position -webkit-sticky
+    top 0
+    z-index 1
     font-size 7pt
     text-transform uppercase
     font-weight bold
     text-align center
     padding-bottom 19px
+    cursor pointer
     
     @media( max-width 1200px )
       &:nth-child(1),
@@ -144,9 +180,13 @@
       height 65px
       border-bottom-color #c7c7bb
       cursor pointer
+      transition( background-color .3s ease )
       
       &.i-action
         color #cc0000
+        
+      &:hover
+        background-color rgba( 115, 166, 51, .15 )
         
       @media( max-width 1200px )
         display block
@@ -189,40 +229,9 @@
       text-decoration none
       
   .col.xl9
-    max-height calc(100vh - 300px)
+    //max-height calc(100vh - 300px)
+    height 540px
     overflow auto
-      
-.modal
-  border-radius 0
-  box-shadow none
-  
-  @media only screen and ( max-width: 600px )
-    width 100%
-    height 100%
-    max-height 100%
-    top 0 !important
-    bottom 0
-  
-  @media only screen and ( min-width: 601px ) and ( max-width: 1200px )
-    width 80%
-  
-  & &-content
-    padding 0
-    
-  &-content__close
-    position absolute
-    top 25px
-    right 25px
-    width 32px
-    height 32px
-    cursor pointer
-    
-    &:hover
-      opacity .7
-    
-   &-overlay
-    background-color rgba( 199,199,187,.67 )
-    opacity 1 !important
   
 .b-flat-modal
   display flex
@@ -234,14 +243,15 @@
   &__img
     width 45%
     background-color #fff
-    display flex
+    //display flex
     align-items center
     
-    img
-      max-width 100%
+    /*img
+      max-width 100%*/
       
     @media( max-width 600px )
       width auto
+      padding 30px
     
   &__text
     width 55%
@@ -258,13 +268,14 @@
       
     @media( max-width 600px )
       width auto
+      padding 30px
     
   &__price
     font-size 26pt
-    margin 35px 0 52px
+    margin 35px 0 32px
     
   &__btn
-    margin-bottom 40px
+    margin-bottom 30px
     
   .btn
   
@@ -276,6 +287,8 @@
   &__close
     font-size 7pt
     
-  
+  .b-doc
+    padding-top 8px
+    margin-bottom 20px
   
   

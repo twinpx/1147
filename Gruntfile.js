@@ -107,7 +107,7 @@ module.exports = function( grunt ) {
     concat: {
       js: {
         files: {
-          '<%= source %>js/jscript.js': [
+          '<%= source %>js/script.js': [
             '<%= source %>js/src/top.js',
             '<%= source %>js/main.js',
             '<%= source %>modules/**/*.js',
@@ -117,8 +117,8 @@ module.exports = function( grunt ) {
       },
       pluginsJS: {
         files: {
-          '<%= source %>js/jscript.js': [
-            '<%= source %>js/jscript.js',
+          '<%= source %>js/script.js': [
+            '<%= source %>js/script.js',
             '<%= source %>js/src/plugins/**/*.js',
           ]
         }
@@ -133,7 +133,7 @@ module.exports = function( grunt ) {
       },
       prod: {
         files: {
-          '<%= temp %>template/jscript.js': [
+          '<%= temp %>template/script.js': [
             '<%= source %>js/src/top.js',
             '<%= source %>js/main.js',
             '<%= source %>modules/**/*.js',
@@ -143,8 +143,8 @@ module.exports = function( grunt ) {
       },
       prodPluginsJS: {
         files: {
-          '<%= temp %>template/jscript.js': [
-            '<%= temp %>template/jscript.js',
+          '<%= temp %>template/script.js': [
+            '<%= temp %>template/script.js',
             '<%= source %>js/src/plugins/**/*.js',
           ]
         }
@@ -174,7 +174,7 @@ module.exports = function( grunt ) {
         },
         files: {
           src: [
-            '<%= source %>js/jscript.js',
+            '<%= source %>js/script.js',
             '<%= source %>components/**/*.js'
           ]
         }
@@ -193,7 +193,7 @@ module.exports = function( grunt ) {
         },
         files: {
           src: [
-            '<%= temp %>template/jscript.js',
+            '<%= temp %>template/script.js',
             '<%= temp %>components/**/*.js'
           ]
         }
@@ -210,7 +210,7 @@ module.exports = function( grunt ) {
         },
         files: [
           {
-            '<%= dest%>template/jscript.js': '<%= source %>js/jscript.js'
+            '<%= dest%>template/script.js': '<%= source %>js/script.js'
           }
         ]
       },
@@ -239,7 +239,7 @@ module.exports = function( grunt ) {
         },
         files: [
           {
-            '<%= temp %>template/jscript.js': '<%= temp %>template/jscript.js'
+            '<%= temp %>template/script.js': '<%= temp %>template/script.js'
           }
         ]
       },
@@ -263,7 +263,7 @@ module.exports = function( grunt ) {
     
     clean: {
       js: {
-        src: [ '<%= source %>js/jscript.js' ]
+        src: [ '<%= source %>js/script.js' ]
       },
       images: {
         src: [ '<%= dest %>template/images/' ]
@@ -357,7 +357,7 @@ module.exports = function( grunt ) {
       js: {
         files: [
           '<%= source %>**/*.js',
-          '!<%= source %>js/jscript.js'
+          '!<%= source %>js/script.js'
         ],
         tasks: [ 'js' ]
       },

@@ -1,0 +1,37 @@
+﻿extends ../layouts/main.jade
+
+block title
+  title Main page | Est-a-tet
+
+block content
+    
+    .container( itemscope itemtype="http://schema.org/NewsArticle" )
+      
+      .row
+        .col.m6.s12.offset-m3
+          h1.b-h2.center-align( itemprop="name" ) Заголовок новости может быть очень длинный право
+      
+      .row
+        
+        .col.m8.s12.offset-m2
+          img.responsive-img( src="/template/images/ill.jpg" alt="Заголовок новости может быть очень длинный право" itemprop="image" )
+      
+        hr.i-size-L.clearfix
+        
+        .col.m6.s12.offset-m3( itemprop="articleBody" )
+          p L-club – четырехсекционный дом клубного формата, расположенный в двух минутах пешком от станции метро «Люблино». 
+          p 23-этажный дом рассчитан всего на 506 квартир с продуманными и функциональными планировочными решениями (от студий до 3-комнатных квартир) и широким выбором площадей (от 37 до 90 м²). 
+          p В подземном паркинге будет организовано 249 машино-мест, а на первом этаже дома разместится детский досуговый центр для маленьких жителей дома. 
+          p На огороженной придомовой территории будут организованы спортивная и детская площадки, а также зона отдыха.
+          
+      hr.i-size-L
+          
+      .center-align
+        a( href="" )
+          b Вернуться на главную
+          
+      hr.i-size-L
+          
+        
+
+          

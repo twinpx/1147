@@ -1,31 +1,60 @@
 body
   background #fff
+  font-family "Akrobat", "Open Sans Condensed", Arial, sans-serif
+  font-size 12pt
   
 a
   
   &,
   &:hover,
   &:focus
-    color #333333
+    color #73a633
     
   &:hover
     text-decoration underline
     opacity .7
+    
+p
+  margin 15px 0
+  text-align justify
   
 section
-  min-height 100vh
   position relative
-  padding 30px 0
+  padding 65px 0
   box-sizing border-box
   
-  &#top-gallery,
-  &#contacts
-    padding 0
+  &#top-gallery
+    padding 0 15px
+    
+  &#aero
+    padding-bottom 0
+    
+img
+  vertical-align top
+    
+#about
+  font-size 13.5pt
+  
+  .col
+    position relative
+    
+  .btn-xlarge
+    width 100%
+    padding 0 10px
+
+#advantages
+
+  p
+    text-align center
+  
+#contacts .container
+  position relative
   
 h1,
 .b-h1
-  font-size 26pt
-  margin-bottom 48px
+  font-size 36pt
+  font-family "Akrobat Bold", "Open Sans Condensed", Arial, sans-serif
+  margin 0
   
   &:first-child
     margin-top 0
@@ -33,18 +62,18 @@ h1,
 h2,
 .b-h2
   text-transform uppercase
-  font-size 13pt
-  font-weight bold
+  font-size 18pt
+  font-family "Akrobat Bold", "Open Sans Condensed", Arial, sans-serif
   margin-bottom 50px
+  color #333
   
-  &:after
+  &:before
     content ''
     display block
-    background-color #9b9478
-    margin 0 auto
-    height 4px
-    width 64px
-    margin-top 14px
+    margin 0 auto 14px
+    width 17px
+    height 29px
+    background embedurl( 'img/sign.png' ) no-repeat center
   
   &:first-child
     margin-top 0
@@ -64,50 +93,30 @@ h2,
   background-color #343232
   color #fff
   
-.b-parking
-  max-height 595px
-  color #fff
-  font-weight bold
-  background-repeat no-repeat
-  background-position center
-  background-size cover
-  padding 60px 0 90px
-  
-  &-h3
-    margin 0 0 120px
-    
-    @media( max-width 600px)
-      margin-bottom 90px
-    
-  img
-    margin-bottom 70px
-    
-    @media( max-width 600px)
-      max-width 100%
-      height 100px
-      margin-bottom 20px
-    
-  .row p
-    line-height 1.1
-    
-    span
-      font-size 35pt
-  
 hr
   border 0
   margin 0
   padding 10px 0
   
+  &.i-size-S
+    padding 7px 0
+  
+  &.i-size-M
+    padding 17px 0
+  
   &.i-size-L
     padding 25px 0
+    
+  &.i-line
+    background embedurl( 'img/hr.gif' ) repeat-x center
     
 .btn,
 .btn-large,
 .btn-small
-  font-size 7pt
+  font-size 12pt
   text-transform uppercase
   color #fff
-  background-color #473728
+  background-color #73a633
   box-shadow none
   border-radius 0
   
@@ -115,7 +124,7 @@ hr
   &:focus,
   a&:hover,
   a&:focus
-    background-color #473728
+    background-color #73a633
     opacity .7
     transition( opacity .2s ease-out )
     box-shadow none
@@ -127,39 +136,36 @@ hr
   height 50px
   padding 0 24px
   
+.btn-xlarge
+  line-height 63px
+  height 63px
+  padding 0 64px
+  
 #map
   width 100%
-  height 100vh
+  height 557px !important
   
   @media( max-width 600px)
-    height 300px
+    height 300px !important
   
 .b-contacts
-  width 100%
-  height 476px
-  max-width 350px
-  background-color rgba( 50,50,50,.86)
-  color #fff
-  padding 23px
-  position absolute
-  top 50%
-  left 127px
-  margin-top -238px
-  z-index 1
+  font-size 13.5pt
   
-  a,
-  a:hover,
-  a:focus
-    color #fff
-  
-  @media( max-width 600px)
-    position static
-    height auto
-    max-width 100%
-    background-color transparent
-    top auto
-    left auto
-    margin-top 50px
+  img
+    width 100px
+    
+  &-phone
+    margin-top -5px
+    
+    b
+      font-size 21pt
+      
+    @media( max-width 767px )
+      font-size 10.5pt
+      margin-top 0
+      
+      b
+        font-size 16pt
   
 .b-gallery-note
   font-size 7pt
@@ -168,9 +174,21 @@ hr
 .row
   margin-bottom 0
   
+#gallery
+  
+  .fotorama__html > div > div
+    background-repeat no-repeat
+    background-position center
+    background-size contain
+    padding-top 56%
+    
+    @media( max-width 600px )
+      background-size cover
+      padding-top 100%
+
 .b-gallery
   
-  .fotorama__stage
+  #top-gallery & .fotorama__stage
     background-color #000
     
   .fotorama__arr
@@ -201,6 +219,47 @@ hr
         transform( rotate(45deg))
         right 19px
         
+#process
+
+  .b-pattern
+    width 252px
+    height 168px
+    background-repeat no-repeat
+    background-position center
+    position absolute
+    top -70px
+    right -1px
+    z-index 2
+    
+    @media( max-width 767px )
+      display none
+
+  .fotorama__dot
+    width: 8px
+    height: 8px
+    border none
+    background-color #d4d4d4
+    
+  .fotorama__nav__frame.fotorama__active .fotorama__dot
+    background-color #73a633
+        
+.i-relative
+  position relative
+        
+.b-close-link
+  position absolute
+  top 12px
+  right 0
+  width 32px
+  height 32px
+  cursor pointer
+  
+  &:hover
+    opacity 0.7
+    
+  @media( max-width 600px )
+    top -20px
+
 .b-flat-card
   display flex
   background-color #f3f3f3
@@ -240,39 +299,177 @@ hr
     font-size 26pt
     margin-top 35px
 
-.b-form
-  padding-top 150px
+section.b-form
   padding-bottom 100px
+  min-height calc( 100vh - 140px )
   
 #slide-out.sidenav
   padding-top 30px
+        
+.hide-on-xl
+
+  @media( min-width 1201px )
+    display none
+    
+#filter-section
+  padding 70px 0
   
-#process
-  
-  .fotorama__arr
-    background none
-  
-    &:after
-      content ''
+.b-collapsible
+
+  &-header
+    text-align center
+    cursor pointer
+    
+    .i-active &:not( .btn )
+      color #73a633
+      margin-bottom 40px
+
+  &-body
+    display none
+    
+  #docs &:nth-of-type(1)
+    div.b-collapsible-body
       display block
-      border-top 1px solid #fff
-      border-right 1px solid #fff
-      width 30px
-      height 30px
-      position absolute
-      top -10px
-      transition( opacity .5s ease )
     
-  .fotorama__arr.fotorama__arr--prev
-    margin-left: 15px
-
-    &:after
-      transform( rotate(-135deg))
-      left 19px
+img.responsive-img
+  width 100%
+  
+.text-small
+  font-size 9pt
+  
+//grid
+.row
+  margin-right -15px
+  margin-left -15px
+  
+  .col
+    padding 0 15px
     
-  .fotorama__arr.fotorama__arr--next
+#command p
+  margin 0
+  
+[type="checkbox"]:checked+span:not(.lever):before
+  border-right-color #73a633
+  border-bottom-color #73a633
+  
+#planImage
+  cursor zoom-in
+  
+  .magnify
+    width 100%
+    
+.b-panorama-button
+  color #73a633
+  cursor pointer
+  height 63px
+  display flex
+  align-items center
+  
+  &:before
+    content ''
+    width 60px
+    height 60px
+    background embedurl( 'img/360-panorama.svg' ) no-repeat center
+    background-size cover
     margin-right 15px
+    
+  @media( max-width 600px )
+    justify-content center
+    
+  @media( min-width 992px ) and ( max-width 1199px )
+    justify-content center
+    
+  @media( min-width 1200px ) and ( max-width 1449px )
+    font-size 10.5pt
+    
+    &:before
+      width 50px
+      height 50px
+          
+@media (min-width: 1200px)
 
-    &:after
-        transform( rotate(45deg))
-        right 19px
+  .hide-on-xlarge
+    display none !important
+        
+#panoramaModal.modal
+  width 85%
+  max-height 80%
+  height 80%
+  
+  .modal-content
+    height 100%
+  
+  iframe
+    width 100%
+    height 100%
+    border none
+    
+.b-heading
+  border-top 1px solid #f6f6f6
+  text-align center
+  height 10px
+  margin-top 10px
+
+  span
+    transform( translateY( -14px ))
+    text-transform uppercase
+    color #73a532
+    font-size 10.5pt
+    display inline-block
+    background-color #fff
+    padding 0 10px
+    
+#processLayer
+  display none
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+  background-color #474747
+  color #fff
+  opacity 0
+  transition( opacity .5s ease )
+  z-index 101
+  
+  &.i-animate
+    display flex
+    justify-content center
+    align-items center
+    opacity 1
+  
+  h3
+    text-transform uppercase
+    font-size 18pt
+    font-family "Akrobat Bold", "Open Sans Condensed", Arial, sans-serif
+    margin-top 0
+    margin-bottom 45px
+    color #fff
+  
+  .b-fotorama
+  
+    .fotorama
+      padding-bottom 40px
+    
+    .fotorama__nav
+      bottom -40px
+      
+    @media( max-width 600px )
+      .fotorama
+        padding-bottom 0
+      
+      .fotorama__nav
+        bottom 0
+    
+#processLayerClose
+  text-align center
+  color #fff
+  font-size 10.5pt
+  text-transform uppercase
+  text-decoration underline
+  cursor pointer
+  
+#arhitectura
+  
+  .col.l8
+    position relative

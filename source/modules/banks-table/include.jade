@@ -3,86 +3,41 @@
   .b-tabs__menu
     .b-tabs__menu__item.i-active( data-tab="hypothec" ) Ипотека
     .b-tabs__menu__item( data-tab="instalments" ) Рассрочка
+    .b-tabs__menu__item( data-tab="actions" ) Акции
+    .b-tabs__menu__item( data-tab="tradein" ) TRADE IN
 
   #hypothec.b-tabs__item.i-active
-    table.b-banks-table
-      thead
-        tr
-          th Банки, предлагающие ипотеку
-          th Процентная<br>ставка
-          th Первоначальный<br>взнос
-          th Срок<br>кредитования
-          th Семейная<br>ипотека 6 %
-      tbody
-        tr
-          td
-            img( src="/upload/banks/1.jpg" alt="" )
-          td от 6,0 %
-          td от 15 %
-          td до 30 лет
-          td Есть
-        tr
-          td
-            img( src="/upload/banks/2.jpg" alt="" )
-          td от 6,0 %
-          td от 15 %
-          td до 30 лет
-          td Есть
-        tr
-          td
-            img( src="/upload/banks/3.jpg" alt="" )
-          td от 6,0 %
-          td от 15 %
-          td до 30 лет
-          td Есть
-        tr
-          td
-            img( src="/upload/banks/4.jpg" alt="" )
-          td от 6,0 %
-          td от 15 %
-          td до 30 лет
-          td Есть
+  
+    .b-collapsible
+      
+      include tab
+      hr
+      .center-align
+        .btn.btn-large.b-collapsible-header больше вариантов
       
   #instalments.b-tabs__item
-    table.b-banks-table
-      thead
-        tr
-          th Банки, предлагающие рассрочку
-          th Процентная<br>ставка
-          th Первоначальный<br>взнос
-          th Срок<br>кредитования
-          th Семейная<br>ипотека 6 %
-      tbody
-        tr
-          td
-            img( src="/upload/banks/1.jpg" alt="" )
-          td от 6,0 %
-          td от 15 %
-          td до 30 лет
-          td Есть
-        tr
-          td
-            img( src="/upload/banks/2.jpg" alt="" )
-          td от 6,0 %
-          td от 15 %
-          td до 30 лет
-          td Есть
-        tr
-          td
-            img( src="/upload/banks/3.jpg" alt="" )
-          td от 6,0 %
-          td от 15 %
-          td до 30 лет
-          td Есть
-        tr
-          td
-            img( src="/upload/banks/4.jpg" alt="" )
-          td от 6,0 %
-          td от 15 %
-          td до 30 лет
-          td Есть
+  
+    .b-collapsible
+    
+      include tab
+      hr
+      .center-align
+        .btn.btn-large.b-collapsible-header больше вариантов
       
-hr.i-size-L
-
-.center-align
-  a.btn.btn-large( href="" ) Оставить заявку
+  #actions.b-tabs__item
+  
+    .b-collapsible
+    
+      include tab
+      hr
+      .center-align
+        .btn.btn-large.b-collapsible-header больше вариантов
+        
+  #tradein.b-tabs__item
+  
+    .b-collapsible
+    
+      include tab
+      hr
+      .center-align
+        .btn.btn-large.b-collapsible-header больше вариантов

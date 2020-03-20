@@ -11,17 +11,29 @@
     <div class="col xl3 l4 m4 s12">
       <div id="filter-btn"><span class="i-show">Использовать фильтр</span><span>Свернуть фильтр</span><i style="background-image: url( '/upload/icons/filter.svg' );"></i></div>
       <div id="filter">
+        <div class="b-filter__input"><span>от</span> 
+          <input id="filter-floors-input-min" type="text" value=""/> <span>до</span> 
+          <input id="filter-floors-input-max" type="text" value=""/>
+        </div>
         <label>Этаж</label>
         <div class="b-filter__wrapper">
           <div id="filter-floors"></div>
         </div>
         <p></p>
+        <div class="b-filter__input"><span>от</span> 
+          <input id="filter-rooms-input-min" type="text" value=""/> <span>до</span> 
+          <input id="filter-rooms-input-max" type="text" value=""/>
+        </div>
         <label>Комнат</label>
         <div class="b-filter__wrapper">
           <div id="filter-rooms"></div>
         </div>
         <p></p>
-        <label>Площадь</label>
+        <div class="b-filter__input"><span>от</span> 
+          <input id="filter-square-input-min" type="text" value=""/> <span>до</span> 
+          <input id="filter-square-input-max" type="text" value=""/>
+        </div>
+        <label>Площадь(м²)</label>
         <div class="b-filter__wrapper">
           <div id="filter-square"></div>
         </div>
@@ -37,7 +49,7 @@
     </div>
     <hr class="i-size-L show-on-small hide-on-med-and-up clearfix"/>
     <div class="col xl9 l8 m8 s12">
-      <table>
+      <table id="filterTable">
         <thead>
           <tr>
             <th>Этаж<br>этажность</th>
