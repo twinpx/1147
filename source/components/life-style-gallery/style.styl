@@ -1,0 +1,35 @@
+@import '../../styl/component-include.styl'
+
+.b-life-style-gallery
+
+  &__text
+    background-color #666666
+    padding 50px 40px
+    color #fff
+      
+    &-wrap
+      opacity 0
+      transition( opacity .5s ease )
+      
+      &.i-show
+        opacity 1
+  
+  &__image
+    background-repeat no-repeat
+    background-position center
+    background-size cover
+    padding-top 75%
+    
+    @media( max-width 600px )
+      padding-top 0
+      height 500px
+  
+  .b-fotorama
+      
+    &__text
+      display none
+      
+    &__frame
+      
+      &:before
+        display none

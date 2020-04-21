@@ -65,16 +65,54 @@
   /*.b-fotorama__container.i-load .b-fotorama__image-bg
     opacity 1*/
     
-  .b-fotorama__sticky-content
+  .b-fotorama__top-content
+    
+    img
+      width 100%
+      height auto
+      
+      @media( max-width 767px )
+        width 200px
+      
+  .b-fotorama__top-text
+    width 285px
+    color #fff
+    text-align left
+    font-family "Akrobat Bold", "Open Sans Condensed", Arial, sans-serif
+    font-size 18pt
+    margin-left 5%
+    padding-top 40px
+    z-index 2
+      
+    p
+      font-size 18pt
+      margin 0
+      line-height 1.2
+      
+    @media( max-width 767px )
+      padding-top 20px
+    
+      .b-h1
+        font-size 24pt
+        
+      p
+        font-size 16pt
+    
+  .b-fotorama__sticky-content,
+  .b-fotorama__top-content
     position absolute
     top 0
     left 0
     width 100%
     height 100%
+    z-index 2
     
   .b-fotorama__height
     width 200px
     height calc( 100% - 204px - 70px )
+        
+    @media( max-width 767px )
+      height calc( 100% - 204px )
 
   .b-fotorama__text
     pointer-events none
@@ -105,9 +143,11 @@
     
     @media( max-width 767px )
       left 20px
+      bottom 20px
     
       .b-h1
         font-size 24pt
         
       p
         font-size 16pt
+        line-height 1.2

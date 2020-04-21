@@ -186,13 +186,13 @@ setTimeout( function() {
 }, 2000);
 
 //call form co.magic
-$( '.b-header-btn, .b-footer-btn' ).click( function(e) {
+/*$( '.b-header-btn, .b-footer-btn' ).click( function(e) {
   e.preventDefault();
   var $comagicButton = $( '.comagic-c-sitephone-label__bubble.comagic-c-sitephone-label__bubble--solid:last' );
   if ( $comagicButton.length ) {
     $comagicButton.click();
   }
-});
+});*/
 
 //banks, docs niceScroll
 //$( '#banks .b-tabs__item, .b-docs-block' ).niceScroll();
