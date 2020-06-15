@@ -7,6 +7,10 @@
     $( '.b-top-gallery .b-fotorama__gallery' ).fotorama();
     
     setTimeout( function() {
+      $( '.b-top-gallery__fotorama .fotorama__wrap' ).prepend( $( '.b-4june' ));
+    }, 1000);
+    
+    setTimeout( function() {
       $( '.b-fotorama__container, .b-fotorama__sticky-content' ).addClass( 'i-load' );
     }, 100);
         

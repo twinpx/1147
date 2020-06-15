@@ -22,7 +22,10 @@ header.b-header
         a( href="contacts" ) Контакты
     
     .b-header-icons
-      div.left
+      a.b-header-pdf.left( href="" target="_blank" )
+        i( style="background-image: url( '/template/images/pdf.svg' );" )
+        u Скачать<br>презентацию
+      div.left.b-header-phone
         .b-header-icons__phone +7 (495) 106-36-55
         a.b-header-btn( href="#" rel="nofollow" ) Заказать звонок
       a.sidenav-trigger.b-header-nav.b-menu-icon.left( href="" data-target="slide-out" rel="nofollow" )

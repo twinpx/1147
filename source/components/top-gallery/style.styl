@@ -80,7 +80,7 @@
     text-align left
     font-family "Akrobat Bold", "Open Sans Condensed", Arial, sans-serif
     font-size 18pt
-    margin-left 5%
+    margin-left 110px
     padding-top 40px
     z-index 2
       
@@ -88,15 +88,56 @@
       font-size 18pt
       margin 0
       line-height 1.2
+      text-align left
       
     @media( max-width 767px )
       padding-top 20px
+      width 90%
+      margin-left 5%
     
       .b-h1
         font-size 24pt
         
       p
         font-size 16pt
+      
+  .b-4june
+    position absolute
+    top 0
+    left 0
+    width 305px
+    color #fff
+    background-color #73a434
+    text-align left
+    font-family "Akrobat Bold", "Open Sans Condensed", Arial, sans-serif
+    padding 15px
+    margin 230px 0 0 calc( 110px - 15px )
+    display none
+    z-index 2
+    
+    .b-h1
+      font-size 68pt
+      text-transform uppercase
+      line-height 1
+      
+    p
+      font-size 32pt
+      margin 0
+      line-height 1.2
+      
+    @media( max-width 767px )
+      margin 150px 5% 0
+      width 90%
+      max-width 350px
+    
+      .b-h1
+        font-size 40pt
+        
+      p
+        font-size 26pt
+        
+  .fotorama__wrap .b-4june
+    display block
     
   .b-fotorama__sticky-content,
   .b-fotorama__top-content
@@ -106,6 +147,9 @@
     width 100%
     height 100%
     z-index 2
+    
+    p
+      text-align left
     
   .b-fotorama__height
     width 200px
@@ -123,7 +167,7 @@
     font-size 21pt
     position sticky
     bottom 70px
-    margin-left 5%
+    margin-left 110px
     z-index 2
     
     .b-h1
@@ -144,6 +188,7 @@
     @media( max-width 767px )
       left 20px
       bottom 20px
+      margin-left 5%
     
       .b-h1
         font-size 24pt
